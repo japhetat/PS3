@@ -42,17 +42,17 @@ public class DeckTest {
 		Card card = d.Draw(pkgEnum.eRank.FIVE);
 		assertTrue(card.geteRank() == pkgEnum.eRank.FIVE);
 	}
-	
+	@Test
 	public void TestDeckRankCount() {
 		//TODO: Build a deck, test the DeckRankCount method
 		Deck d = new Deck();
 		assertEquals(d.DeckRankCount(pkgEnum.eRank.EIGHT), 4);
 	}
-	
+	@Test
 	public void TestDeckSuitCount() {
 		//TODO: Build a deck, test the DeckSuitCount method
 		Deck d = new Deck();
-		assertEquals(d.DeckSuitCount(pkgEnum.eSuit.DIAMONDS), 14);
+		assertEquals(d.DeckSuitCount(pkgEnum.eSuit.DIAMONDS), 13);
 	}
 
 }
